@@ -5,16 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoClicker"
         mc:Ignorable="d"
-        Title="Neato Thorpedo" Height="149.844" Width="200.242" Topmost="True" ResizeMode="NoResize">
-    <Grid Margin="0,0,-0.333,4">
+        Title="Neato Thorpedo" Height="341.053" Width="209.555" Topmost="True" ResizeMode="NoResize">
+    <Grid Margin="0,0,-5.333,6">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="70*"/>
-            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
-        <RadioButton x:Name="rbnOn" Content="Autoclicker On" HorizontalAlignment="Left" Margin="23,18,0,0" VerticalAlignment="Top" GroupName="AutoclickerOnOff" Checked="rbnOn_Checked"/>
-        <RadioButton x:Name="rbnOff" Content="Autoclicker Off" HorizontalAlignment="Left" Margin="23,87,0,0" VerticalAlignment="Top" GroupName="AutoclickerOnOff" IsChecked="True" Checked="rbnOff_Checked"/>
+        <RadioButton x:Name="rbnOn" Content="Autoclicker On" HorizontalAlignment="Left" Margin="23,18,0,0" VerticalAlignment="Top" GroupName="AutoclickerOnOff" Checked="rbnOn_Checked" Height="15" Width="97"/>
+        <RadioButton x:Name="rbnOff" Content="Autoclicker Off" HorizontalAlignment="Left" Margin="23,87,0,0" VerticalAlignment="Top" GroupName="AutoclickerOnOff" IsChecked="True" Checked="rbnOff_Checked" Height="15" Width="98"/>
         <TextBox x:Name="txtInterval" HorizontalAlignment="Left" Height="23" Margin="46,48,0,0" TextWrapping="Wrap" Text="1000" VerticalAlignment="Top" Width="54" TextChanged="txtInterval_TextChanged"/>
-        <Label Content="milliseconds" HorizontalAlignment="Left" Margin="102,44,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
-
+        <Label Content="milliseconds" HorizontalAlignment="Left" Margin="102,44,0,0" VerticalAlignment="Top" Height="26" Width="75"/>
+        <RadioButton x:Name="rbnAutotypeOn" Content="AutoTyper On" HorizontalAlignment="Left" Margin="23,174,0,0" VerticalAlignment="Top" GroupName="AutotyperOnOff" Checked="rbnAutotypeOn_Checked" Height="15" Width="93"/>
+        <RadioButton x:Name="rbnAutotypeOff" Content="AutoTyper Off" HorizontalAlignment="Left" Margin="23,243,0,0" VerticalAlignment="Top" GroupName="AutotyperOnOff" IsChecked="True" Checked="rbnAutotypeOff_Checked" Height="15" Width="94"/>
+        <TextBox x:Name="txtAutotypeInterval" HorizontalAlignment="Left" Height="23" Margin="46,204,0,0" TextWrapping="Wrap" Text="50" VerticalAlignment="Top" Width="54" TextChanged="txtAutotypeInterval_TextChanged"/>
+        <Label Content="milliseconds" HorizontalAlignment="Left" Margin="104,204,0,0" VerticalAlignment="Top" Height="26" Width="75"/>
+        <Label Content="Shortcut: F6" HorizontalAlignment="Left" Margin="58,107,0,0" VerticalAlignment="Top" IsEnabled="False" Height="26" Width="73"/>
+        <Label Content="Shortcut: F5" HorizontalAlignment="Left" Margin="58,263,0,0" VerticalAlignment="Top" IsEnabled="False" Height="26" Width="73"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="134" Margin="10,10,0,0" VerticalAlignment="Top" Width="175"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="134" Margin="10,162,0,0" VerticalAlignment="Top" Width="175"/>
     </Grid>
 </Window>
